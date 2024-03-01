@@ -24,12 +24,28 @@
 ) = {
   block(
     inset: (left: 0pt),
-    strong(tl) + h(1fr) + tr +
+    tl + h(1fr) + tr +
     linebreak() +
     if bl != "" or br != "" {
       bl + h(1fr) + br + linebreak()
     } +
     content
+  )
+}
+
+#let cvitem(
+  tl: lorem(2),
+  tr: "2333/23 - 2333/23",
+  bl: "",
+  br: ""
+) = {
+  block(
+    inset: (left: 0pt),
+    tl + h(1fr) + tr +
+    linebreak() +
+    if bl != "" or br != "" {
+      bl + h(1fr) + br
+    }
   )
 }
 
