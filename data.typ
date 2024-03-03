@@ -1,3 +1,4 @@
+#import "data/award.typ": award
 #import "data/basic.typ": name, links
 #import "data/edu.typ": edu
 #import "data/work.typ": work

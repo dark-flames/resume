@@ -29,6 +29,12 @@
     link: iconlink("https://github.com/dark-flames/ty-ops", icon: github, text: "ty-ops"),
     intro: "Type-level simply typed lambda calculus in Rust",
     content: [],
+  ),
+  (
+    name: "derivation-resolver",
+    link: iconlink("https://github.com/dark-flames/derivation-resolver", icon: github, text: "derivation-resolver"),
+    intro: "Derivation tree resolver for STLC and System F in Rust",
+    content: [],
   )
 )
 

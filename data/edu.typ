@@ -27,7 +27,7 @@
       degree: "B.Eng.",
       department: "IoT Engineering",
       university: "Shandong University",
-      location: "Qingdao, China",
+      location: "Qingdao, Shandong, China",
       time: " Sep, 2019 - June, 2021",
       extend: []
     )
