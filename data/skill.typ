@@ -22,10 +22,10 @@
     title: "Web Development",
     content: [
       *7 years* of experience in full-stack web development:
-      - Backend: Proficient in various backend frameworks in PHP, Python, and Rust, including Symfony, Laravel, Django, and Actix. Familiar with message queues and asynchronous programming. Also experienced in backend framework design.
+      - Backend: proficient in various backend frameworks in PHP, Python, and Rust, including Symfony, Laravel, Django, and Actix. Familiar with message queues and asynchronous programming. Also experienced in backend framework design.
       - Frontend: experienced with Vue.
       - Database: knowledgeable in MySQL, PostgreSQL, Redis, and Elasticsearch with a strong background in database design and optimization.
-      - DevOps: Skilled in Docker, proficient in CI/CD practices, and experienced with cloud services.
+      - DevOps: skilled in Docker, proficient in CI/CD practices, and experienced with cloud services.
     ]
   ),
   (
