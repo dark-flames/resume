@@ -11,8 +11,9 @@
     location: "Kyoto, Japan",
     content: [
       - Proposed a novel approach to implementing gradual dependent types soundly and efficiently for introducing dependent types into general-purpose programming languages.
-      - Presented a cast calculus as the core language base on dependent pattern matching and pattern unification.
+      - Introduced a cast calculus as the core language base on dependent pattern matching and pattern unification.
       - Implemented a prototype of the cast calculus in Haskell.
+      - Presented a short paper#cite(<PGTT>) at SRC\@SPLASH 2023, giving a talk and a poster presentation.
     ]
   ),
 )
