@@ -1,11 +1,4 @@
-#let Full = "full"
-#let Short = "short"
-
-#let version = Full
-
-#let setVersion(v) = {
-  version = v
-}
+#import "../config.typ": version
 
 #let multiVersion(..v) = {
   v.named().at(version)

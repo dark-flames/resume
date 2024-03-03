@@ -1,10 +1,5 @@
-#let EN = "en"
-#let CN = "cn"
-#let lang = EN
+#import "../config.typ": lang
 
-#let setLang(l) = {
-  lang = l
-}
 #let multiLang(..c) = {
   c.named().at(lang)
 }

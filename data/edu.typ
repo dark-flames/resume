@@ -44,6 +44,5 @@
         br: [#e.location],
       )[#e.extend]
   }).join()
-
   [#c]
 }
