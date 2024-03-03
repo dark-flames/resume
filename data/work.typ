@@ -3,7 +3,8 @@
 
 #let workList = (
   (
-    company: [*Luogu* #iconlink("https://luogu.com", text: "luogu.com")],
+    company: "Luogu",
+    link: iconlink("https://luogu.com", text: "luogu.com"),
     role: "Backend Team Leader, Remote, Part-Time",
     location: "Shanghai, China",
     time: "Jul, 2017 - Apr, 2023",
@@ -20,8 +21,8 @@
   multiLang(en: [== Work Experience], cn: [== 工作经历])
   let s = workList.map(w => {
     cventry(
-        tl: w.company,
-        tr: w.location,
+        tl: [*#w.company*, #w.location],
+        tr: w.link,
         bl: w.role,
         br: w.time
     )[#w.content]

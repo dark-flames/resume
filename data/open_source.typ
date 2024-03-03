@@ -17,9 +17,8 @@
   multiLang(en: [== OpenSource Contributions], cn: [== 开源贡献])
   let c = openSourceList.map(i => {
     cventry(
-        tl: [*#i.name*],
+        tl: [*#i.name*, #i.intro],
         tr: i.link,
-        bl: i.intro
     )[#i.content]
   }).join()
 
