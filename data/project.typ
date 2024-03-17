@@ -13,6 +13,12 @@
     ],
   ),
   (
+    name: "toy-dt-cpp",
+    link: iconlink("https://github.com/dark-flames/top-dt-cpp", icon: github, text: "top-dt-cpp"),
+    intro: "A toy dependently typed language implementation in C++",
+    content: [],
+  ),
+  (
     name: "iroha",
     link: iconlink("https://github.com/dark-flames/Iroha", icon: github, text: "iroha"),
     intro: "A tokenization library for procedural macros in Rust",

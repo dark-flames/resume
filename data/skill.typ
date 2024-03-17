@@ -6,8 +6,8 @@
     title: "Programming Languages ",
     content: [
       - Proficient in both Object-Oriented Programming and Functional Programming, experienced in meta-programming. Able to work effectively with any programming language.
-      - Highly proficient in Agda, Haskell, PHP, Python, Rust.
-      - Comfortable with C/C++, Coq, Java, JavaScript, OCaml, TypeScript.
+      - Highly proficient in Agda, C/C++, Haskell, PHP, Python, Rust.
+      - Comfortable with Coq, Java, JavaScript, OCaml, TypeScript.
     ]
   ),
   (
