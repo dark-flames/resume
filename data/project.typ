@@ -41,7 +41,13 @@
     link: iconlink("https://github.com/dark-flames/derivation-resolver", icon: github, text: "derivation-resolver"),
     intro: "Derivation tree resolver for STLC and System F in Rust",
     content: [],
-  )
+  ),
+  (
+    name: "riscv-cpu",
+    link: iconlink("https://github.com/dark-flames/RISCV-CPU", icon: github, text: "RISCV-CPU"),
+    intro: "Assignment project, a pipelined RISC-V CPU in Verilog",
+    content: [],
+  ),
 )
 
 #let project = {
