@@ -5,7 +5,7 @@
   (
     name: "National Olympiad in Informatics in Provinces",
     detail: "First Prize",
-    intro: "Programming contest held by China Computer Federation",
+    intro: "Competitive programming contest held by China Computer Federation",
     date: "Nov, 2015",
     location: "Shandong, China",
     content: []
