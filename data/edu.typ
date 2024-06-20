@@ -28,7 +28,7 @@
       department: "IoT Engineering",
       university: "Shandong University",
       location: "Qingdao, Shandong, China",
-      time: " Sep, 2019 - June, 2021",
+      time: " Sep, 2017 - June, 2021",
       extend: []
     )
   )
