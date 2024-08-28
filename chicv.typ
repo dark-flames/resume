@@ -73,6 +73,7 @@
 #let chicv(body) = {
   set par(justify: true)
   set text(fill: main-color())
+  set text(size: 14pt) if is-web-target()
 
   show heading.where(
     level: 1
@@ -88,7 +89,7 @@
   show heading.where(
     level: 2
   ): it => text(
-    size: 12pt,
+    size: if is-web-target() { 15pt } else { 12pt },
     font: (
       "Avenir Next LT Pro",
       "Manrope",
