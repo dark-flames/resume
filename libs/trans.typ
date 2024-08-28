@@ -1,5 +1,10 @@
-#import "../config.typ": lang
+#import "@preview/shiroa:0.1.0": is-web-target
 
 #let multiLang(..c) = {
-  c.named().at(lang)
+  if is-web-target() {
+    c.named().at("en")
+  } else {
+    import "../config.typ": lang
+    c.named().at(lang)
+  }
 }
