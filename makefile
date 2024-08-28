@@ -14,7 +14,9 @@ config:
 	echo "#let lang = \"$(RLANG)\"\n#let version = \"$(RVERSION)\"" > config.typ
 
 compile: config
-	typst compile --font-path ./fonts main.typ $(FILE) 
+	typst compile --font-path ./fonts main.typ $(FILE) --input x-target=pdf-light
+
+
 
 
 
