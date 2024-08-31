@@ -1,26 +1,6 @@
-#import "chicv.typ": *
-#import "libs.typ": *
-#import "data.typ": *
+#import "resume.typ": *
 
-#show: chicv
-
-#name
-#links
-
-#edu
-
-#interest
-
-#work
-
-#research
-
-#openSource
-
-#project
-
-#skill
-
-#award
-
-#pub
+#resume((
+  x-lang: sys.inputs.at("x-lang", default: "en"),
+  x-version: sys.inputs.at("x-version", default: "resume")
+))

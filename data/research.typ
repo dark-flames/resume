@@ -18,8 +18,8 @@
   ),
 )
 
-#let research = {
-  multiLang(en: [== Research Experience], cn: [== 科研经历])
+#let research(env) = {
+  multiLang(env, en: [== Research Experience], cn: [== 科研经历])
   let c = researchList.map(i => {
     cventry(
         tl: [*#i.title*, #i.intro],

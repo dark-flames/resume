@@ -1,8 +1,9 @@
 #import "../libs.typ": *
 #import "../chicv.typ": *
 
-#let eduList = (
+#let eduList(env) = (
   multiLang(
+    env,
     en: (
       degree: "Master of Informatics",
       department: "Commucation and Computer Engineering",
@@ -13,6 +14,7 @@
     )
   ),
   multiLang(
+    env,
     en: (
       degree: "B.Eng.",
       department: "Computer Science",
@@ -23,6 +25,7 @@
     )
   ),
   multiLang(
+    env,
     en: (
       degree: "B.Eng.",
       department: "IoT Engineering",
@@ -34,9 +37,9 @@
   )
 )
 
-#let edu = {
-  multiLang(en: [== Education], ja: [== 教育经历])
-  let c = eduList.map(e => {
+#let edu(env) = {
+  multiLang(env, en: [== Education], ja: [== 教育经历])
+  let c = eduList(env).map(e => {
     cventry(
         tl: strong(e.university),
         tr: e.time,

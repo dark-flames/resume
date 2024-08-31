@@ -1,6 +1,6 @@
 #import "../libs.typ": *
 
-#let interest = (
+#let interestList = (
   (
     title: "Dependent Type Theory",
     content: [
@@ -12,12 +12,12 @@
   ),
 )
 
-#let interest = {
+#let interest(env) = {
   
-  cv-content({
-    multiLang(en: [== Research Interests])
+  cv-content(env, {
+    multiLang(env, en: [== Research Interests])
     
-    let i = interest.map(s => {
+    let i = interestList.map(s => {
       [*#s.title:* #s.content]
     }).join()
 

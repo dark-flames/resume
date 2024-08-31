@@ -56,15 +56,15 @@
   ),
 )
 
-#let project = {
-  multiLang(en: [== Personal Projects], cn: [== 个人项目])
-  let content = if(not show-cv-content()) {
+#let project(env) = {
+  multiLang(env, en: [== Personal Projects], cn: [== 个人项目])
+  let content = if(not show-cv-content(env)) {
     projectList.filter(i => not i.cv-content or i.resume-content)
   } else {
     projectList
   }
 
-  if(not show-resume-content()) {
+  if(not show-resume-content(env)) {
     content.filter(i => not i.resume-content or i.cv-content)
   } else {
     content

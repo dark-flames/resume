@@ -1,11 +1,12 @@
 #import "../libs.typ": *
 #import "../chicv.typ": *
 
-#let skillList = (
+#let skillList(env) = (
   (
     title: "Programming Languages",
     cv-content: true,
     content: cv-and-others(
+      env,
       [
         Agda, C/C++, Coq, Java, JavaScript, Haskell, OCaml, PHP, Python, TypeScript, Rust. Able to work effectively with any programming language.
       ], [
@@ -29,6 +30,7 @@
     title: "Web Development",
     cv-content: true,
     content: cv-and-others(
+      env,
       [
         *7 years* of experience in full-stack web development, proficient in backend and frontend development, database design, and optimization, and DevOps practices.
       ], [
@@ -52,12 +54,12 @@
   ),
 )
 
-#let skill = {
-  multiLang(en: [== Skills], ja: [== 技能])
-  if(is-cv()) {
-    skillList.filter(s => s.cv-content)
+#let skill(env) = {
+  multiLang(env, en: [== Skills], ja: [== 技能])
+  if(is-cv(env)) {
+    skillList(env).filter(s => s.cv-content)
   } else {
-    skillList
+    skillList(env)
   }.map(s => {
     [- *#s.title:* #s.content]
   }).join()

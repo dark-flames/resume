@@ -1,70 +1,67 @@
 #import "@preview/shiroa:0.1.0": is-web-target
 
-#let multiVersion(..v) = {
-  if is-web-target() {
-    v.named().at("cv")
-  } else {
-    v.named().at(get-version())
-  }
-}
-
-#let get-version() = {
+#let get-version(env) = {
   if is-web-target() {
     "cv"
   } else {
-    sys.inputs.at("x-version", default: "resume")
+    env.at("x-version", default: "full")
   }
 }
 
-#let is-full() = {
-  let version = sys.inputs.at("x-version", default: "full");
-  version == "full"
+#let multiVersion(env, ..v) = {
+  if is-web-target() {
+    v.named().at("cv")
+  } else {
+    v.named().at(get-version(env,))
+  }
 }
 
-#let is-cv() = {
-  let version = sys.inputs.at("x-version", default: "full");
-  version == "cv"
+#let is-full(env) = {
+  get-version(env) == "full"
 }
 
-#let is-resume() = {
-  let version = sys.inputs.at("x-version", default: "full");
-  version == "resume"
+#let is-cv(env) = {
+  get-version(env) == "cv"
 }
 
-#let show-cv-content() = {
-  is-cv() or is-full()
+#let is-resume(env) = {
+  get-version(env) == "resume"
 }
 
-#let show-resume-content() = {
-  is-resume() or is-full()
+#let show-cv-content(env) = {
+  is-cv(env) or is-full(env)
 }
 
-#let cv-content(content) = {
-  if show-cv-content()  {
+#let show-resume-content(env) = {
+  is-resume(env) or is-full(env)
+}
+
+#let cv-content(env, content) = {
+  if show-cv-content(env)  {
     content
   } else {
     []
   }
 }
 
-#let resume-content(content) = {
-  if show-resume-content()  {
+#let resume-content(env, content) = {
+  if show-resume-content(env)  {
     content
   } else {
     []
   }
 }
 
-#let cv-and-others(cv-content, others-content) = {
-  if is-cv() {
+#let cv-and-others(env, cv-content, others-content) = {
+  if is-cv(env) {
     cv-content
   } else {
     others-content
   }
 }
 
-#let resume-and-others(resume-content, others-content) = {
-  if is-resume() {
+#let resume-and-others(env, resume-content, others-content) = {
+  if is-resume(env) {
     resume-content
   } else {
     others-content

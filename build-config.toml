@@ -1,0 +1,8 @@
+[entries.resume]
+entry = "main-resume.typ"
+
+[entries.cv]
+entry = "main-cv.typ"
+
+[entries.full]
+entry = "main-full.typ"

@@ -13,8 +13,8 @@
   ),
 )
 
-#let openSource = {
-  multiLang(en: [== OpenSource Contributions], cn: [== 开源贡献])
+#let openSource(env) = {
+  multiLang(env, en: [== OpenSource Contributions], cn: [== 开源贡献])
   let c = openSourceList.map(i => {
     cventry(
         tl: [*#i.name*, #i.intro],

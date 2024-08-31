@@ -17,9 +17,9 @@
   ),
 )
 
-#let work = {
-  resume-content({
-    multiLang(en: [== Work Experience], cn: [== 工作经历])
+#let work(env) = {
+  resume-content(env, {
+    multiLang(env,en: [== Work Experience], cn: [== 工作经历])
     let s = workList.map(w => {
       cventry(
           tl: [*#w.company*, #w.location],

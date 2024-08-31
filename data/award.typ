@@ -12,9 +12,9 @@
   ),
 )
 
-#let award = {
-  resume-content({
-    multiLang(en: [== Honors and Awards])
+#let award(env) = {
+  resume-content(env, {
+    multiLang(env, en: [== Honors and Awards])
     let s = awardList.map(a => {
       cventry(
           tl: [*#a.name*, #a.detail],
