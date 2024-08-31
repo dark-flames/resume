@@ -4,7 +4,7 @@
   if is-web-target() {
     c.named().at("en")
   } else {
-    import "../config.typ": lang
+    let lang = sys.inputs.at("x-lang", default: "en")
     c.named().at(lang)
   }
 }

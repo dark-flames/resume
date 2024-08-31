@@ -7,3 +7,4 @@
 #import "data/project.typ": project
 #import "data/skill.typ": skill
 #import "data/pub.typ": pub
+#import "data/interest.typ": interest

@@ -2,19 +2,16 @@ RLANG ?= "en"
 RVERSION ?= "full"
 FILE = "./resume-$(RLANG)-$(RVERSION).pdf"
 
-all: config compile clean-config
+all: compile
 
 clean : 
 	rm -rf *.pdf
 
-clean-config :
-	rm -rf config.typ
-
-config:
-	echo "#let lang = \"$(RLANG)\"\n#let version = \"$(RVERSION)\"" > config.typ
-
-compile: config
-	typst compile --font-path ./fonts main.typ $(FILE) --input x-target=pdf-light
+compile:
+	typst compile --font-path ./fonts main.typ $(FILE) \
+		--input x-target=pdf-light \
+		--input x-lang=$(RLANG) \
+		--input x-version=$(RVERSION)
 
 
 
