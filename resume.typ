@@ -11,15 +11,19 @@
 
   #edu(env)
 
-  #work(env)
-
   #interest(env)
 
   #research(env)
 
+  #work(env)
+
   #openSource(env)
 
   #project(env)
+  
+  #if is-cv(env) {
+    new-page(env)
+  }
 
   #skill(env)
 

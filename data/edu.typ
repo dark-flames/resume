@@ -10,6 +10,7 @@
       university: "Kyoto University",
       location: "Kyoto, Japan",
       time: " Apr, 2022 - Mar, 2024",
+      // GPA	3.31 /4.3
       extend: [Advisor: Atsushi Igarashi]
     )
   ),
@@ -32,6 +33,7 @@
       university: "Shandong University",
       location: "Qingdao, Shandong, China",
       time: " Sep, 2017 - June, 2021",
+      // GPA	3.93 /5.0
       extend: []
     )
   )
@@ -43,7 +45,7 @@
     cventry(
         tl: strong(e.university),
         tr: e.time,
-        bl: [#e.degree in #e.department],
+        bl: [*#e.degree* in #e.department],
         br: [#e.location],
       )[#e.extend]
   }).join()

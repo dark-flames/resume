@@ -1,7 +1,7 @@
 #import "../libs.typ": *
 #import "../chicv.typ": *
 
-#let researchList = (
+#let researchList(env) = (
   (
     title: "A Cast Calculus for Implementing Gradual Dependent Types",
     intro: "Master's Thesis",
@@ -10,7 +10,7 @@
     group: "Kyoto University",
     location: "Kyoto, Japan",
     content: [
-      - Proposed a novel approach to implementing gradual dependent types soundly and efficiently for introducing dependent types into general-purpose programming languages.
+      - Proposed a novel approach to implementing gradual dependent types soundly and efficiently for introducing dependent types into general-purpose programming languages. 
       - Introduced a cast calculus as the core language base on dependent pattern matching and pattern unification.
       - Implemented a prototype of the cast calculus in Haskell.
       - Presented a short paper#cite(<PGTT>) at SRC\@SPLASH 2023, giving a talk and a poster presentation.
@@ -20,7 +20,7 @@
 
 #let research(env) = {
   multiLang(env, en: [== Research Experience], cn: [== 科研经历])
-  let c = researchList.map(i => {
+  let c = researchList(env).map(i => {
     cventry(
         tl: [*#i.title*, #i.intro],
         tr: i.time,

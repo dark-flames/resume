@@ -1,4 +1,4 @@
-#import "@preview/shiroa:0.1.0": is-web-target
+#import "@preview/shiroa:0.1.0": is-web-target, is-pdf-target
 
 #let get-version(env) = {
   if is-web-target() {
@@ -65,5 +65,13 @@
     resume-content
   } else {
     others-content
+  }
+}
+
+#let new-page(env) = {
+  if is-pdf-target() {
+    pagebreak()
+  } else {
+    []
   }
 }

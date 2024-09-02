@@ -13,6 +13,7 @@
   [#fa[#envelope] #link("mailto:darkf1ames@pm.me")[darkf1ames\@pm.me]],
   [#fa[#github] #link("https://github.com/dark-flames")[github.com/dark-flames]],
   [#fa[#telegram] #link("https://t.me/Dark_flames")[t.me/Dark_flames]],
+  [#fa[#link-icon]#link("https://dark-flames.com")[dark-flames.com]]
 )
 
 #let links(env) = {

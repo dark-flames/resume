@@ -10,7 +10,7 @@
     intro: "A type-driven and high-performance ORM framework in Rust",
     content: [
       - Derives SQL operations from simple Rust code based on a monadic structure.
-      - Provides a functional query builder that delegates its type-checking to the type system of Rust (makes heavy use of type-level computation).
+      - Provides a functional query builder that delegates its type-checking to the type system of Rust.
       - The abstraction is type-safe but zero-cost, ensures both efficiency and type safety.
     ],
   ),
@@ -19,12 +19,12 @@
     cv-content: true,
     resume-content: true,
     link: iconlink("https://github.com/dark-flames/top-dt-cpp", icon: github, text: "top-dt-cpp"),
-    intro: "A toy dependently typed language implementation in C++",
+    intro: "A simple dependently typed language implementation in C++",
     content: [],
   ),
   (
     name: "quote-data",
-    cv-content: false,
+    cv-content: true,
     resume-content: true,
     link: iconlink("https://github.com/dark-flames/quote-data", icon: github, text: "quote-data"),
     intro: "A tokenization library for procedural macros in Rust",
@@ -32,7 +32,7 @@
   ),
   (
     name: "annotation-rs",
-    cv-content: false,
+    cv-content: true,
     resume-content: true,
     link: iconlink("https://github.com/dark-flames/annotation-rs", icon: github, text: "annotation-rs"),
     intro: "Compile-time annotation parser for Rust",
