@@ -2,5 +2,5 @@
 
 #resume((
   x-lang: "en",
-  x-version: "full"
+  x-version: "resume"
 ))

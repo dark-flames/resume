@@ -1,19 +1,11 @@
 #import "@preview/shiroa:0.1.0": is-web-target, is-pdf-target
 
 #let get-version(env) = {
-  if is-web-target() {
-    "cv"
-  } else {
-    env.at("x-version", default: "full")
-  }
+  env.at("x-version", default: "full")
 }
 
 #let multiVersion(env, ..v) = {
-  if is-web-target() {
-    v.named().at("cv")
-  } else {
-    v.named().at(get-version(env,))
-  }
+  v.named().at(get-version(env,))
 }
 
 #let is-full(env) = {
