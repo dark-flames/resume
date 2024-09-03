@@ -28,10 +28,10 @@
         *7 years* of experience in full-stack web development, proficient in backend development, databases, and DevOps practices.
       ], [
         *7 years* of experience in full-stack web development:
-        - Backend: proficient in various backend frameworks in PHP, Python, and Rust, including Symfony, Laravel, Django, and Actix. Familiar with message queues and asynchronous programming. Also experienced in backend framework design.
-        - Frontend: experienced with Vue.
-        - Database: knowledgeable in MySQL, PostgreSQL, Redis, and Elasticsearch with a strong background in database design and optimization.
-        - DevOps: skilled in Docker, proficient in CI/CD practices, and experienced with cloud services.
+        - _Backend_: proficient in various backend frameworks in PHP, Python, and Rust, including Symfony, Laravel, Django, and Actix. Familiar with message queues and asynchronous programming. Also experienced in backend framework design.
+        - _Frontend_: experienced with Vue.
+        - _Database_: knowledgeable in MySQL, PostgreSQL, Redis, and Elasticsearch with a strong background in database design and optimization.
+        - _DevOps_: skilled in Docker, proficient in CI/CD practices, and experienced with cloud services.
       ]
     )
   ),

@@ -10,13 +10,13 @@
     time: "Jul, 2017 - Apr, 2023",
     content: cv-and-others(env, [
       - Led and participated in the backend development of the biggest online-judge platform in China.
-      - Designed and developed a back-end framework in PHP with dependency injection and container compilation.
-      - While continuously introducing new features, progressively optimized and refactored the existing codebase, enabling scalability from tens of thousands to over a million users, and supported an annual judgment volume of fifty million.
+      - Designed and developed a backend framework in PHP with dependency injection and container compilation.
+      - Optimized and refactored the existing codebase progressively while continuously introducing new features, enabling scalability from tens of thousands to over a million users, and supporting an annual judgment volume of fifty million.
     ], [
       - Led and participated in the backend development of the biggest online-judge platform in China.
-      - Designed and developed a back-end framework in PHP with dependency injection and container compilation.
+      - Designed and developed a backend framework in PHP with dependency injection and container compilation.
       - Designed and led the development of several curial middlewares, including a distributed asynchronous task worker in Rust, a WebSocket server in Python.
-      - While continuously introducing new features, progressively optimized and refactored the existing codebase, enabling scalability from tens of thousands to over a million users, and supported an annual judgment volume of fifty million.
+      - Optimized and refactored the existing codebase progressively while continuously introducing new features, enabling scalability from tens of thousands to over a million users, and supporting an annual judgment volume of fifty million.
     ])
   ),
 )

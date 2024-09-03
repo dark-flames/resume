@@ -9,9 +9,9 @@
     link: iconlink("https://github.com/dark-flames/yukino-dev", icon: github, text: "yukino-dev"),
     intro: "A type-driven and high-performance ORM framework in Rust",
     content: [
-      - Derives SQL operations from simple Rust code based on a monadic structure.
-      - Provides a functional query builder that delegates its type-checking to the type system of Rust.
-      - The abstraction is type-safe but zero-cost, ensures both efficiency and type safety.
+      - Derived SQL operations from simple Rust code based on a monadic structure.
+      - Developed a functional query builder that delegates its type-checking to the type system of Rust.
+      - Provided a zero-cost abstraction that ensures both efficiency and type safety.
     ],
   ),
   (
