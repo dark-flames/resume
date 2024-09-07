@@ -6,7 +6,7 @@
     env,
     en: (
       degree: "Master of Informatics",
-      department: "Commucation and Computer Engineering",
+      department: "Communication and Computer Engineering",
       university: "Kyoto University",
       location: "Kyoto, Japan",
       time: " Apr, 2022 - Mar, 2024",
