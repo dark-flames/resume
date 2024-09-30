@@ -9,12 +9,17 @@
     advisor: "Prof. Atsushi Igarashi and Prof. Taro Sekiyama",
     group: "Kyoto University",
     location: "Kyoto, Japan",
-    content: [
+    content: resume-and-others(env, [
       - Proposed a novel approach to implementing gradual dependent types soundly and efficiently for introducing dependent types into general-purpose programming languages. 
-      - Introduced a cast calculus as the core language base on dependent pattern matching and pattern unification.
+      - Introduced a cast calculus as the core language based on dependent pattern matching and pattern unification.
       - Implemented a prototype of the cast calculus in Haskell.
-      - Presented a short paper#cite(<PGTT>) at SRC\@SPLASH 2023, giving a talk and a poster presentation.
-    ]
+      - Presented a short paper#cite(<PGTT>) at SRC\@SPLASH 2023, delivering both a talk and a poster presentation.
+    ], [
+      - Proposed a novel approach to the consistent and efficient implementation of gradual dependent types, which introduced modality into the type system and combined static elaboration with runtime pattern unification.
+      - Introduced a cast calculus as the core language based on dependent pattern matching and pattern unification.
+      - Implemented a prototype of the cast calculus in Haskell.
+      - Presented a short paper#cite(<PGTT>) at SRC\@SPLASH 2023, delivering both a talk and a poster presentation.
+    ])
   ),
 )
 
