@@ -75,14 +75,16 @@
   set text(fill: main-color())
   set text(size: 14pt) if is-web-target()
 
+  let the-font = (
+      "Avenir Next LT Pro", // original chi-cv font
+      "Source Han Serif SC",
+      "Source Han Serif",
+  )
   show heading.where(
     level: 1
   ): set text(
     size: 22pt,
-    font: (
-      "Avenir Next LT Pro", // original chi-cv font
-      "Manrope", // a font available in the typst environment and looks similar to Avenir
-    ),
+    font: the-font,
     weight: "light",
   )
 
@@ -90,16 +92,16 @@
     level: 2
   ): it => text(
     size: if is-web-target() { 15pt } else { 12pt },
-    font: (
-      "Avenir Next LT Pro",
-      "Manrope",
-    ),
+    font: the-font,
     weight: "light",
     block(
       chiline() + it,
     )
   )
   set list(indent: 0pt)
+  set text(
+    font: the-font
+  )
 
   show link: it => underline(offset: 2pt, it)
   set page(

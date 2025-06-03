@@ -35,6 +35,7 @@
       ]
     )
   ),
+  // todo : devOps
   (
     title: "Development Tools",
     cv-content: false,
