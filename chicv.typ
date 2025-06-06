@@ -50,7 +50,9 @@
     if bl != "" or br != "" {
       bl + h(1fr) + br + linebreak()
     } +
-    content
+    if content != "" {
+      content
+    }
   )
 }
 
@@ -70,38 +72,40 @@
   )
 }
 
-#let chicv(body) = {
+#let chicv(
+  header-font : (
+    "Avenir Next LT Pro", // original chi-cv font
+    "Manrope"
+  ),
+  text-font : (
+    "libertinus serif"
+  ),
+  body
+) = {
   set par(justify: true)
   set text(fill: main-color())
-  set text(size: 14pt) if is-web-target()
-
-  let the-font = (
-      "Avenir Next LT Pro", // original chi-cv font
-      "Source Han Serif SC",
-      "Source Han Serif",
-  )
+  
   show heading.where(
     level: 1
   ): set text(
     size: 22pt,
-    font: the-font,
+    font: header-font,
     weight: "light",
   )
 
   show heading.where(
     level: 2
   ): it => text(
-    size: if is-web-target() { 15pt } else { 12pt },
-    font: the-font,
+    size: if is-web-target() { 15pt } else { 14pt },
+    font: header-font,
     weight: "light",
     block(
       chiline() + it,
     )
   )
   set list(indent: 0pt)
-  set text(
-    font: the-font
-  )
+  set text(size: 14pt, font: text-font) if is-web-target()
+  set text(font: text-font) if is-pdf-target()
 
   show link: it => underline(offset: 2pt, it)
   set page(

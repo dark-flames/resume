@@ -3,7 +3,10 @@
 #import "data.typ": *
 
 #let resume(env) = [
-  #show: chicv
+  #show: chicv.with(
+    header-font: get-header-font(env),
+    text-font: get-text-font(env)
+  )
 
   #name(env)
 
@@ -20,8 +23,8 @@
   #openSource(env)
 
   #project(env)
-  
-  #if is-cv(env) {
+
+  #if is-resume(env) {
     new-page(env)
   }
 

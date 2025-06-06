@@ -1,37 +1,17 @@
-RLANG ?= "en"
-RVERSION ?= "full"
-FILE = "./resume-$(RLANG)-$(RVERSION).pdf"
+LANGS = en cn
+VERSIONS = cv resume full
+TARGETS = $(foreach lang,$(LANGS),$(addsuffix -$(lang),$(VERSIONS)))
 
-all: cv resume full
+all: clean $(TARGETS)
 
 clean : 
 	rm -rf *.pdf
 
-compile:
-	typst compile --font-path ./fonts main.typ $(FILE) \
+$(TARGETS):
+	$(eval VERSION := $(word 1,$(subst -, ,$@)))
+	$(eval LANG := $(word 2,$(subst -, ,$@)))
+	$(eval OUTPUT := $(VERSION)-$(LANG).pdf)
+	typst compile --font-path ./fonts main.typ $(OUTPUT) \
 		--input x-target=pdf-light \
-		--input x-lang=$(RLANG) \
-		--input x-version=$(RVERSION)
-
-cv:
-	typst compile --font-path ./fonts main.typ cv-en.pdf \
-		--input x-target=pdf-light \
-		--input x-lang=en \
-		--input x-version=cv
-
-resume:
-	typst compile --font-path ./fonts main.typ resume-en.pdf \
-		--input x-target=pdf-light \
-		--input x-lang=en \
-		--input x-version=resume
-
-full:
-	typst compile --font-path ./fonts main.typ resume-full-en.pdf \
-		--input x-target=pdf-light \
-		--input x-lang=en \
-		--input x-version=full
-
-
-
-
-
+		--input x-lang=$(LANG) \
+		--input x-version=$(VERSION)
