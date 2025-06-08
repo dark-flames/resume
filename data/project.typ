@@ -104,7 +104,10 @@
     content
   }.map(i => {
     cventry(
-        tl: [*#i.name*, #i.intro],
+        tl: multiLang(env, 
+          en: [*#i.name*, #i.intro],
+          cn: [*#i.name*，#i.intro]
+        ),
         tr: i.link,
       )[#i.content]
   }).join()

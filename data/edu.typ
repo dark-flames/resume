@@ -70,7 +70,7 @@
         bl: multiLang(
           env,
           en: [*#e.degree* in #e.department],
-          cn: [#e.degree, #e.department]
+          cn: [#e.degree，#e.department]
         ),
         br: [#e.location],
       )[#e.extend]

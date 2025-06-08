@@ -42,7 +42,10 @@
   multiLang(env, en: [== Research Experience], cn: [== 科研经历])
   let c = researchList(env).map(i => {
     cventry(
-        tl: [*#i.title*, #i.intro],
+        tl: multiLang(env, 
+          en: [*#i.title*, #i.intro],
+          cn: [*#i.title*，#i.intro]
+        ),
         tr: i.time,
         bl: multiLang(env, en: [#i.group, advised by #i.advisor], cn: [#i.group，指导教授： #i.advisor]),
         br: i.location,

@@ -36,7 +36,10 @@
   multiLang(env,en: [== Work Experience], cn: [== 工作经历])
   let s = workList(env).map(w => {
     cventry(
-        tl: [*#w.company*, #w.location],
+        tl: multiLang(env,
+          en: [*#w.company*, #w.location],
+          cn: [*#w.company*，#w.location]
+        ),
         tr: w.link,
         bl: w.role,
         br: w.time

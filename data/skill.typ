@@ -61,8 +61,8 @@
     title: multiLang(env, en: [Languages], cn: [语言]),
     cv-content: true,
     content: multiLang(env, 
-      en: [Chinese: native, English: advanced, Japanese: intermediate], 
-      cn: [汉语：母语，英语：高级，日语：中级]
+      en: [Chinese: native, English: advanced, Japanese: intermediate.], 
+      cn: [汉语：母语；英语：高级；日语：中级。]
     )
   ),
 )

@@ -37,7 +37,10 @@
     multiLang(env, en: [== Honors and Awards], cn: [== 荣誉与奖项])
     let s = awardList(env).map(a => {
       cventry(
-          tl: [*#a.name*, #a.detail],
+          tl: multiLang(env, 
+            en: [*#a.name*, #a.detail],
+            cn: [*#a.name*，#a.detail]
+          ),
           tr: a.date,
           bl: a.intro,
           br: a.location
