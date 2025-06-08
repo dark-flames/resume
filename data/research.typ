@@ -6,7 +6,7 @@
     title: "A Cast Calculus for Implementing Gradual Dependent Types",
     intro: multiLang(env, en: "Master's Thesis", cn: "硕士论文"),
     time: multiLang(env, en: "Jan, 2023 - Feb, 2024", cn: "2023年1月 - 2024年2月"),
-    advisor: multiLang(env, en: "Prof. Atsushi Igarashi and Prof. Taro Sekiyama", cn: "Atsushi Igarashi 教授和 Prof. Taro Sekiyama  教授"),
+    advisor: multiLang(env, en: "Prof. Atsushi Igarashi and Prof. Taro Sekiyama", cn: "Atsushi Igarashi 教授和 Taro Sekiyama  教授"),
     group: multiLang(env, en: "Kyoto University", cn: "京都大学"),
     location: multiLang(env, en: "Kyoto, Japan", cn: "日本，京都府"),
     content: resume-and-others(env, 
