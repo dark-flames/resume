@@ -1,6 +1,9 @@
 [entries.resume]
 entry = "main-resume.typ"
 
+[entries.resume-cn]
+entry = "main-resume-cn.typ"
+
 [entries.cv]
 entry = "main-cv.typ"
 
