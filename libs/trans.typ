@@ -26,6 +26,11 @@
   )
 )
 
+#let is-cn(env) = {
+  let lang = env.at("x-lang", default: "en")
+  lang == "cn"
+}
+
 #let get-header-font(env) = {
   let lang = env.at("x-lang", default: "en")
   header-font.at(lang, default: header-font.at("en"))

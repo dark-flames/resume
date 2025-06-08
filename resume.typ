@@ -5,7 +5,10 @@
 #let resume(env) = [
   #show: chicv.with(
     header-font: get-header-font(env),
-    text-font: get-text-font(env)
+    text-font: get-text-font(env),
+    text-size: if is-web-target() { 
+      if is-cn(env) { 13pt } else { 14pt }
+     } else { 11pt }
   )
 
   #name(env)

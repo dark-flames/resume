@@ -80,6 +80,7 @@
   text-font : (
     "libertinus serif"
   ),
+  text-size: 11pt,
   body
 ) = {
   set par(justify: true)
@@ -104,7 +105,7 @@
     )
   )
   set list(indent: 0pt)
-  set text(size: 14pt, font: text-font) if is-web-target()
+  set text(size: text-size, font: text-font) if is-web-target()
   set text(font: text-font) if is-pdf-target()
 
   show link: it => underline(offset: 2pt, it)
