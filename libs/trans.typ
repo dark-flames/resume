@@ -1,4 +1,4 @@
-#import "@preview/shiroa:0.1.0": is-web-target
+#import "@preview/shiroa:0.2.3": is-web-target
 
 #let multiLang(env, ..c) = {
   let lang = env.at("x-lang", default: "en")
@@ -7,14 +7,12 @@
 
 #let header-font = (
   en : (
-      "Avenir Next LT Pro",
-      "Manrope"
+      "Avenir Next LT Pro"
   ),
   cn : (
       "Noto Sans Mono CJK SC",
       "Noto Sans Mono CJK",
-      "Avenir Next LT Pro",
-      "Manrope"
+      "Avenir Next LT Pro"
   )
 )
 

@@ -1,5 +1,5 @@
 #import "fontawesome.typ": *
-#import "@preview/shiroa:0.1.0": is-pdf-target, is-web-target, get-page-width
+#import "@preview/shiroa:0.2.3": is-pdf-target, is-web-target, get-page-width
 
 #let main-color() = {
   if is-web-target() {

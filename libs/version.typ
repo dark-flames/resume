@@ -1,4 +1,4 @@
-#import "@preview/shiroa:0.1.0": is-web-target, is-pdf-target
+#import "@preview/shiroa:0.2.3": is-web-target, is-pdf-target
 
 #let get-version(env) = {
   env.at("x-version", default: "full")
