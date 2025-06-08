@@ -37,3 +37,18 @@
   let lang = env.at("x-lang", default: "en")
   text-font.at(lang, default: text-font.at("en"))
 }
+
+
+#let trans-date(env, month, day, year) = {
+  let en-month-names = ("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec")
+  let lang = env.at("x-lang", default: "en")
+  let month-name = multiLang(env, en: en-month-names.at(month - 1), cn: [#month 月])
+  multiLang(env,
+    en: [#month-name #day, #year],
+    cn: [#year 年#month-name#day 日]
+  )
+}
+
+#let trans-today(env) = {
+   trans-date(env, datetime.today().month(), datetime.today().day(), datetime.today().year())
+}

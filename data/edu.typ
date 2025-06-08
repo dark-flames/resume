@@ -10,7 +10,6 @@
       university: "Kyoto University",
       location: "Kyoto, Japan",
       time: " Apr, 2022 - Mar, 2024",
-      // GPA	3.31 /4.3
       extend: [Advisor: Prof. Atsushi Igarashi]
     ),
     cn: (
@@ -49,7 +48,6 @@
       university: "Shandong University",
       location: "Qingdao, Shandong, China",
       time: " Sep, 2017 - June, 2021",
-      // GPA	3.93 /5.0
       extend: []
     ),
     cn: (

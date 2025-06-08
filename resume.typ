@@ -33,4 +33,6 @@
   #award(env)
 
   #pub(env)
+
+  #align(right, text(fill: gray)[#multiLang(env, en: [Last Updated on], cn: "更新时间：") #trans-today(env)])
 ]
