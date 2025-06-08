@@ -8,7 +8,7 @@
     text-font: get-text-font(env),
     text-size: if is-web-target() { 
       if is-cn(env) { 13pt } else { 14pt }
-     } else { 11pt }
+    } else { 11pt }
   )
 
   #name(env)

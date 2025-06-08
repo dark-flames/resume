@@ -11,7 +11,6 @@
   ),
   cn : (
       "Noto Sans Mono CJK SC",
-      "Noto Sans Mono CJK",
       "Avenir Next LT Pro"
   )
 )

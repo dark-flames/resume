@@ -105,8 +105,7 @@
     )
   )
   set list(indent: 0pt)
-  set text(size: text-size, font: text-font) if is-web-target()
-  set text(font: text-font) if is-pdf-target()
+  set text(size: text-size, font: text-font)
 
   show link: it => underline(offset: 2pt, it)
   set page(
