@@ -67,3 +67,7 @@
     []
   }
 }
+
+#let blackout(text) = box(
+  rect(fill: black, width: text.width(), height: text.height())
+)

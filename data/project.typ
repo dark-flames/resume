@@ -9,7 +9,7 @@
     link: iconlink("https://github.com/dark-flames/yukino-dev", icon: github, text: "yukino-dev"),
     intro: multiLang(env, 
       en: "A type-driven and high-performance ORM framework in Rust",
-      cn: "Rust 实现的类型驱动高性能 ORM 框架"
+      cn: "本科毕业设计，Rust 实现的类型驱动高性能 ORM 框架"
     ),
     content: multiLang(env, 
       en: [
@@ -28,8 +28,8 @@
     resume-content: true,
     link: iconlink("https://github.com/dark-flames/otus-formal", icon: github, text: "otus-formal"),
     intro: multiLang(env, 
-      en: "Normalization by Evaluation for Martin-Löf Type Theory in Agda",
-      cn: "Agda 实现的 Martin-Löf 类型论的语义正规化（NbE）证明"
+      en: "Normalization by Evaluation for Martin-Löf Type Theory in Agda (WIP)",
+      cn: "Agda 实现的 Martin-Löf 类型论的语义正规化（NbE）证明（WIP）"
     ),
     content: [],
   ),

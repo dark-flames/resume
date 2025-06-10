@@ -8,7 +8,7 @@
     content: multiLang(
       env,
       en: [Not limited to any specific language, especially experienced in Agda, Haskell, PHP, Python, Rust, comfortable with C/C++, Java, JavaScript, OCaml, TypeScript. Skilled in metaprogramming, code generation, and type-driven development.],
-      cn: [可以使用任何编程语言进行工作，精通 Agda、Haskell、PHP、Python、Rust，熟悉 C/C++、Java、JavaScript、OCaml、TypeScript （排名均不分先后）。擅长元编程，代码生成与类型驱动开发。]
+      cn: [可以使用任何编程语言进行工作，精通 Agda、Haskell、PHP、Python、Rust，熟悉 C/C++的Java、JavaScript、OCaml、TypeScript （排名均不分先后）。擅长元编程、代码生成与类型驱动开发。]
     )
   ),
   (
@@ -16,8 +16,8 @@
     cv-content: true,
     content: multiLang(
       env,
-      en: [familiar with various dependent type theories and their semantics, familiar with Agda, and have experience with formal verification.],
-      cn: [熟悉各种依值类型论和他们的语义模型，具有形式化验证的经验，熟练使用 Agda 等定理证明器。]
+      en: [familiar with various dependent type theories, modal type theories and their semantics, familiar with Agda, and have experience with formal verification.],
+      cn: [熟悉各种依值类型论、模态类型论和他们的语义模型，具有形式化验证的经验，熟练使用 Agda 等定理证明器。]
     )
   ),
   (
@@ -33,8 +33,9 @@
     cv-content: true,
     content: cv-and-others(
       env,
-      multiLang(env, en :[*7 years* of experience in full-stack web development, proficient in backend development, databases, and DevOps practices.
-      ], cn : [*7年*全栈 Web 开发经验，精通后端开发、数据库和 DevOps 实践。
+      multiLang(env,
+        en :[*7 years* of experience in full-stack web development, proficient in backend development, databases, and DevOps practices.],
+        cn : [*7年*全栈 Web 开发经验，精通后端开发、数据库和 DevOps 实践。
       ]), multiLang(env,
         en: [*7 years* of experience in full-stack web development:
           - _Backend_: proficient in various backend frameworks in PHP, Python, and Rust, including Symfony, Laravel, Django, and Actix. Familiar with message queues and asynchronous programming. Also experienced in backend framework design.
