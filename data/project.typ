@@ -18,7 +18,7 @@
       - Provided a zero-cost abstraction that ensures both efficiency and type safety.
     ],
       cn: [
-      - 基于单子结构和惰性求职从简单的 Rust 代码构建 SQL 操作。
+      - 基于单子结构和惰性求值从简单的 Rust 代码构建 SQL 操作。
       - 开发了一个函数式的查询构建器，利用 Rust 的类型系统对 SQL 进行检查。
       - 提供了零成本抽象的数据库接口，兼顾效率和安全。
     ]),
