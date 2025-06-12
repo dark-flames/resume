@@ -8,7 +8,7 @@
     content: multiLang(
       env,
       en: [Not limited to any specific language, especially experienced in Agda, Haskell, PHP, Python, Rust, comfortable with C/C++, Java, JavaScript, OCaml, TypeScript. Skilled in metaprogramming, code generation, and type-driven development.],
-      cn: [可以使用任何编程语言进行工作，精通 Agda、Haskell、PHP、Python、Rust，熟悉 C/C++的Java、JavaScript、OCaml、TypeScript （排名均不分先后）。擅长元编程、代码生成与类型驱动开发。]
+      cn: [可以使用任何编程语言进行工作，精通 Agda、Haskell、PHP、Python、Rust，熟悉 C/C++、Java、JavaScript、OCaml、TypeScript （排名均不分先后）。擅长元编程、代码生成与类型驱动开发。]
     )
   ),
   (
