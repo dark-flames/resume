@@ -54,3 +54,12 @@
 #let trans-today(env) = {
    trans-date(env, datetime.today().month(), datetime.today().day(), datetime.today().year())
 }
+
+#let en-only(env, content) = {
+  let lang = env.at("x-lang", default: "en")
+  if lang == "en" {
+    content
+  } else {
+    []
+  }
+}

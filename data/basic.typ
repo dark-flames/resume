@@ -10,12 +10,21 @@
 }
 
 #let linkList = (
-  [#fa[#envelope] #link("mailto:darkf1ames@pm.me")[darkf1ames\@pm.me]],
-  [#fa[#github] #link("https://github.com/dark-flames")[github.com/dark-flames]],
-  [#fa[#telegram] #link("https://t.me/Dark_flames")[t.me/Dark_flames]],
-  [#fa[#link-icon]#link("https://dark-flames.com")[dark-flames.com]]
+  (
+    en-only: false,
+    content: [#fa[#envelope] #link("mailto:darkf1ames@pm.me")[darkf1ames\@pm.me]]
+  ),(
+    en-only: false,
+    content: [#fa[#github] #link("https://github.com/dark-flames")[github.com/dark-flames]]
+  ),(
+    en-only: true,
+    content: [#fa[#telegram] #link("https://t.me/Dark_flames")[t.me/Dark_flames]]
+  ),(
+    en-only: false,
+    content: [#fa[#link-icon]#link("https://dark-flames.com")[dark-flames.com]]
+  )
 )
 
 #let links(env) = {
-  linkList.join([ | ])
+  linkList.filter(i => is-cn(env) and not i.en-only).map(i => i.content).join([ | ])
 }

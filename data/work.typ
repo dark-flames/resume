@@ -4,7 +4,7 @@
 #let workList(env) = (
   (
     company: multiLang(env, en : "Luogu", cn : "上海洛谷网络科技有限公司"),
-    link: iconlink("https://luogu.com", text : "luogu.com"),
+    link: iconlink("https://www.luogu.com.cn", text : "luogu.com.cn"),
     role: multiLang(env, en : "Backend Team Leader, Remote, Part-Time", cn : "后端开发组组长，远程，兼职"),
     location: multiLang(env, en : "Shanghai, China", cn : "中国，上海"),
     time: multiLang(env, en : "Jul, 2017 - Apr, 2023", cn : "2017年7月 - 2023年4月"),
