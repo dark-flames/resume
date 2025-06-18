@@ -24,8 +24,7 @@
     title: multiLang(env, en: [Compiler], cn: [编译器]),
     cv-content: true,
     content: multiLang(env, 
-    en: [understand various compiler architectures, familiar with compiler frontend, especially in type checking. Also have experience in parser generator and DSL design.
-    ], 
+    en: [understand various compiler architectures, familiar with compiler frontend, especially in type checking. Experienced in in parser generator and DSL design.], 
     cn: [了解主流编程语言的设计，理解各种编译器架构，熟悉编译器前端，尤其是类型检查和静态分析。擅长使用各种 parser 生成器，具有 DSL 以及编程语言工具链的设计与实现经验。])
   ),
   (
@@ -41,10 +40,10 @@
           - _Backend_: proficient in various backend frameworks in PHP, Python, and Rust, including Symfony, Laravel, Django, and Actix. Familiar with message queues and asynchronous programming. Also experienced in backend framework design.
           - _Frontend_: experienced with React and Vue.js.
           - _Database_: knowledgeable in MySQL, PostgreSQL, Redis, and Elasticsearch with a strong background in database design and optimization.
-          - _DevOps_: skilled in Docker, proficient in CI/CD practices, and experienced with cloud services.],
+          - _DevOps_: skilled in Docker, proficient in CI/CD practices, and experienced with cloud services, network and storage configuration, and server operations and maintenance.],
         cn: [*7年*全栈 Web 开发经验：
           - _后端_：精通 PHP、Python 和 Rust 的各种后端开发框架，包括 Symfony、Laravel、Django 和 Actix，可以快速上手并使用任意其它框架。熟悉消息队列和异步编程，并有后端架构设计经验。
-          - _前端_：熟悉 React 和 Vue.js。
+          - _前端_：有使用 React 和 Vue.js 的经验。
           - _数据库_：精通 MySQL、PostgreSQL、Redis 和 Elasticsearch 等数据库，具有丰富的数据库设计和优化经验。
           - _DevOps_：熟悉使用 Docker 和各种 CI/CD 配置，并有云服务使用、网络和存储配置、服务器运维方面的经验。]
       )
