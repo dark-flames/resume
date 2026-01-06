@@ -7,8 +7,8 @@
     cv-content: true,
     content: multiLang(
       env,
-      en: [Not limited to any specific language, especially experienced in Agda, Haskell, PHP, Python, Rust, comfortable with C/C++, Java, JavaScript, OCaml, TypeScript. Skilled in metaprogramming, code generation, and type-driven development.],
-      cn: [可以使用任何编程语言进行工作，精通 Agda、Haskell、PHP、Python、Rust，熟悉 C/C++、Java、JavaScript、OCaml、TypeScript （排名均不分先后）。擅长元编程、代码生成与类型驱动开发。]
+      en: [*Language-agnostic*, with a strong ability to rapidly ramp up on new programming languages, driven by a solid background in programming language theory. Experienced in Agda, Haskell, PHP, Python, and Rust; comfortable with C/C++, Java, JavaScript, OCaml, and TypeScript. Skilled in metaprogramming, code generation, and type-driven development.],
+      cn: [不依赖于特定编程语言，具备快速上手与高效掌握新语言的能力。精通 Agda、Haskell、PHP、Python、Rust，熟悉 C/C++、Java、JavaScript、OCaml、TypeScript （排名均不分先后）。擅长元编程、代码生成与类型驱动开发。]
     )
   ),
   (
@@ -24,8 +24,9 @@
     title: multiLang(env, en: [Compiler], cn: [编译器]),
     cv-content: true,
     content: multiLang(env, 
-    en: [understand various compiler architectures, familiar with compiler frontend, especially in type checking. Experienced in in parser generator and DSL design.], 
-    cn: [了解主流编程语言的设计，理解各种编译器架构，熟悉编译器前端，尤其是类型检查和静态分析。擅长使用各种 parser 生成器，具有 DSL 以及编程语言工具链的设计与实现经验。])
+    en: [understand various compiler architectures, familiar with compiler frontend, especially in type checking. Experienced in in parser generator and DSL design. Studied LLVM IR and the Language Server Protocol (LSP) for compiler tooling and editor integration.], 
+    cn: [了解主流编程语言的设计，理解各种编译器架构，熟悉编译器前端，尤其是类型检查和静态分析。擅长使用各种 parser 生成器，具有 DSL 以及编程语言工具链的设计与实现经验。学习过 LLVM IR 和语言服务器协议（LSP）等知识。]
+    )
   ),
   (
     title: multiLang(env, en: [Web Development], cn: [Web 开发]),
