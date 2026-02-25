@@ -6,7 +6,7 @@
     title: "A Cast Calculus for Implementing Gradual Dependent Types",
     intro: multiLang(env, en: "Master's Thesis", cn: "硕士论文"),
     time: multiLang(env, en: "Jan, 2023 - Feb, 2024", cn: "2023年1月 - 2024年2月"),
-    advisor: multiLang(env, en: "Prof. Atsushi Igarashi and Prof. Taro Sekiyama", cn: "Atsushi Igarashi 教授和 Taro Sekiyama  教授"),
+    advisor: multiLang(env, en: "Prof. Atsushi Igarashi and Prof. Taro Sekiyama", cn: "Atsushi Igarashi 教授和 Taro Sekiyama 教授"),
     group: multiLang(env, en: "Kyoto University", cn: "京都大学"),
     location: multiLang(env, en: "Kyoto, Japan", cn: "日本，京都府"),
     content: resume-and-others(env, 
@@ -18,7 +18,7 @@
           - Presented a short paper#cite(<PGTT>) at SRC\@SPLASH 2023, delivering both a talk and a poster presentation.
         ],
         cn : [
-          - 提出了一种渐进依值类型的实现方法，可以正确高效的将依值类型引入通用编程语言。
+          - 提出了一种渐进依值类型的实现方法，可以正确高效地将依值类型引入通用编程语言。
           - 基于依值模式匹配和模式归一化 （pattern unification）实现了核心语言的类型转换。
           - 使用 Haskell 实现了原型语言的类型检查与解释器。
           - 在 SRC\@SPLASH 2023 上发表了一篇短论文#cite(<PGTT>)，进行了演讲和海报展示。

@@ -37,7 +37,7 @@
     name: "toy-dt-cpp",
     cv-content: true,
     resume-content: true,
-    link: iconlink("https://github.com/dark-flames/top-dt-cpp", icon: github, text: "top-dt-cpp"),
+    link: iconlink("https://github.com/dark-flames/toy-dt-cpp", icon: github, text: "toy-dt-cpp"),
     intro: multiLang(env, 
       en: "A simple dependently typed language implementation in C++",
       cn: "C++ 实现的简单依值类型语言"

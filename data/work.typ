@@ -20,7 +20,7 @@
     ), multiLang(env, en : [
         - Led and participated in the backend development of the biggest online-judge platform in China.
         - Designed and developed a backend framework in PHP with dependency injection and container compilation.
-        - Designed and led the development of several curial middlewares, including a distributed asynchronous task worker in Rust, a WebSocket server in Python.
+        - Designed and led the development of several crucial middlewares, including a distributed asynchronous task worker in Rust, a WebSocket server in Python.
         - Optimized and refactored the existing codebase progressively while continuously introducing new features, enabling scalability from tens of thousands to over a million users, and supporting an annual judgment volume of fifty million.
       ], cn : [
         - 参与并领导了中国最大的在线评测平台的后端开发。

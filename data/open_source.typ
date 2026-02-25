@@ -13,7 +13,7 @@
       en : [
         - Overhauled records to support dependent types.
         - Helped with some bugs and refactorings in primitive definitions.
-        - Add new features for pattern matching.
+        - Added new features for pattern matching.
       ],
       cn : [
         - 重构记录以支持依值类型。
@@ -25,7 +25,7 @@
 )
 
 #let openSource(env) = {
-  multiLang(env, en: [== OpenSource Contributions], cn: [== 开源贡献])
+  multiLang(env, en: [== Open-Source Contributions], cn: [== 开源贡献])
   let c = openSourceList(env).map(i => {
     cventry(
         tl: multiLang(env, 

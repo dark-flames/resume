@@ -26,5 +26,5 @@
 )
 
 #let links(env) = {
-  linkList.filter(i => is-cn(env) and not i.en-only).map(i => i.content).join([ | ])
+  linkList.filter(i => not (is-cn(env) and i.en-only)).map(i => i.content).join([ | ])
 }

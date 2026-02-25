@@ -9,7 +9,7 @@
       department: "Communication and Computer Engineering",
       university: "Kyoto University",
       location: "Kyoto, Japan",
-      time: " Apr, 2022 - Mar, 2024",
+      time: "Apr, 2022 - Mar, 2024",
       extend: [Advisor: Prof. Atsushi Igarashi]
     ),
     cn: (
@@ -28,7 +28,7 @@
       department: "Computer Science",
       university: "Kumamoto University",
       location: "Kumamoto, Japan",
-      time: " Oct, 2019 - March, 2022",
+      time: "Oct, 2019 - Mar, 2022",
       extend: []
     ),
     cn: (
@@ -47,7 +47,7 @@
       department: "IoT Engineering",
       university: "Shandong University",
       location: "Qingdao, Shandong, China",
-      time: " Sep, 2017 - June, 2021",
+      time: "Sep, 2017 - Jun, 2021",
       extend: []
     ),
     cn: (
